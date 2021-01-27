@@ -21,5 +21,6 @@ export const sendToBackend = (tweet) => dispatch => {
 }
 
 export const saveTweetData = (tweet) => dispatch => {
+    console.log(tweet)
     dispatch({ type: PREVIEW_TWEET, payload: tweet });
 }

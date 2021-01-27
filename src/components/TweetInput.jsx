@@ -11,11 +11,12 @@ const TweetInput = (props) => {
     const handleSubmit = (e) => {
         // make call to reducer to process tweet on submit
         e.preventDefault();
+        console.log(tweet)
+        props.saveTweetData(tweet)
     }
 
     const handleChanges = (e) => {
         setTweet(e.target.value);
-        saveTweetData(t => t);
     }
 
     return (

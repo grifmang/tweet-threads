@@ -44,13 +44,15 @@ const TweetList = (props) => {
         <>
             <h2>Tweet Thread Preview</h2>
             {console.log(props.tweet)}
+            {console.log(eachTweet)}
+            {console.log(tweetLengthCount)}
             {console.log('CA', cardAmount)}
-            <TweetCards tweet={props.tweet} />
-            {/* {cardAmount === 1 
+            {/* <TweetCards tweet={props.tweet} /> */}
+            {cardAmount < 2 
             ? <TweetCards tweet={props.tweet} />
             : eachTweet.map((e, i) => {
                 return <TweetCards key={i} tweet={e.join(' ')} />
-            })} */}
+            })}
         </>
     )
 }
