@@ -1,1 +1,1 @@
-"Tweet thread making app frontend created in React" 
+### Tweet thread making app written in React.
