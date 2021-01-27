@@ -4,6 +4,7 @@ export const SEND_TWEET = 'SEND_TWEET';
 export const SEND_SUCCESS = 'SEND_SUCCESS';
 export const SEND_FAILURE = 'SEND_FAILURE';
 export const PREVIEW_TWEET = 'PREVIEW_TWEET';
+export const SAVE_EACH_TWEET = 'SAVE_EACH_TWEET';
 
 export const sendToBackend = (tweet) => dispatch => {
     dispatch({ type: SEND_TWEET });
@@ -21,6 +22,10 @@ export const sendToBackend = (tweet) => dispatch => {
 }
 
 export const saveTweetData = (tweet) => dispatch => {
-    console.log(tweet)
     dispatch({ type: PREVIEW_TWEET, payload: tweet });
+}
+
+export const saveEachTweets = (eachTweet) => dispatch => {
+    console.log('eachTweet Dispatch');
+    dispatch({ type: SAVE_EACH_TWEET, payload: eachTweet });
 }

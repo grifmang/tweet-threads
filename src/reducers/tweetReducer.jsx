@@ -2,11 +2,13 @@ import {
     SEND_TWEET,
     SEND_SUCCESS,
     SEND_FAILURE,
-    PREVIEW_TWEET
+    PREVIEW_TWEET,
+    SAVE_EACH_TWEET
 } from '../actions';
 
 const initialState = {
     tweet: '',
+    eachTweet: [],
     message: '',
     isSending: false,
     error: ''
@@ -20,6 +22,11 @@ const tweetReducer = (state=initialState, action) => {
             return {
                 ...state,
                 tweet: action.payload
+            }
+        case SAVE_EACH_TWEET:
+            return {
+                ...state,
+                eachTweet: action.payload
             }
         case SEND_TWEET:
             return {

@@ -3,5 +3,7 @@ export {
     SEND_FAILURE,
     SEND_SUCCESS,
     PREVIEW_TWEET,
-    saveTweetData
+    SAVE_EACH_TWEET,
+    saveTweetData,
+    saveEachTweets
 } from './tweetActions';
