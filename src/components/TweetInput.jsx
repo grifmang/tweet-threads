@@ -43,16 +43,12 @@ const TweetInput = (props) => {
           returnArr.push(tempArr)
         }
         
-        // returnArr.forEach(element => {
-        //   console.log(element.join(' ').length)  
-        // })
-        
         return returnArr;
     }
 
     return (
         <>
-        <section style={{ "width": "50%", "marginLeft": "5%" }}>
+        <section style={{ "margin": "0 5% 0 5%" }}>
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
                     <Label for="tweet">Enter Tweet Thread Below:</Label>

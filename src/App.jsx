@@ -4,9 +4,13 @@ import TweetList from './components/TweetList';
 
 function App() {
   return (
-    <div className="App">
-      <TweetInput />
-      <TweetList />
+    <div style={{ "display": "flex" }} className="App">
+      <section style={{ "width": "50%" }}>
+        <TweetInput />
+      </section>
+      <section style={{ "width": "50%" }}>
+        <TweetList />  
+      </section>
     </div>
   );
 }
