@@ -9,7 +9,7 @@ const TweetCards = (props) => {
     return (
         <div style={{ "width": "400px", "borderRadius": "10px", "border": "1px solid grey", "marginBottom": "2%" }} className="tweet">
             <div style={{ "display": "inline-block", "width": "100%" }} className="tweetHeader">
-                <div style={{ "margin": "1% 0 0 1%", "float": "left", "width": "20%" }} className="avatar"><img src={avatar} /></div>
+                <div style={{ "margin": "1% 0 0 1%", "float": "left", "width": "20%" }} className="avatar"><img src={avatar} alt="avatar" /></div>
                 <div style={{ "float": "right", "marginRight": "2%" }}>
                     <FontAwesomeIcon icon={faEllipsisH} />
                 </div>
