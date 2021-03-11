@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import TweetCards from './TweetCards';
 import { connect } from "react-redux";
 
@@ -7,9 +7,11 @@ const TweetList = (props) => {
     return (
         <>
             <h2>Tweet Thread Preview</h2>
-            {props.eachTweet.map((e, i) => {
-                return <TweetCards key={i} tweet={e.join(' ')} />
-            })}
+            <div style={{ "justifyContent": "center" }}>
+                {props.eachTweet.map((e, i) => {
+                    return <TweetCards key={i} tweet={e.join(' ')} />
+                })}
+            </div>
         </>
     )
 }
