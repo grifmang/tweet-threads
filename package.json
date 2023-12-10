@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "yarn": "1.22.17"
+    "yarn": "1.22.21"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
